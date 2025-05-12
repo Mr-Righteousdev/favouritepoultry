@@ -3,7 +3,7 @@
     "build": {
       "builder": "NIXPACKS",
       "buildCommand": 
-        "composer install --no-dev --optimize-autoloader && npm ci && npm run build && php artisan config:clear && php artisan migrate --force"
+        "touch /tmp/database.sqlite && composer install --no-dev --optimize-autoloader && npm ci && npm run build && php artisan config:clear && php artisan migrate --force"
     },
     "deploy": {
       "runtime": "V2",
