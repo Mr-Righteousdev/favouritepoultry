@@ -2,7 +2,7 @@
     "$schema": "https://railway.com/railway.schema.json",
     "build": {
       "builder": "NIXPACKS",
-      "buildCommand": "chmod +x ./build-app.sh && sh ./build-app.sh"
+      "buildCommand": "php artisan migrate --force"
     },
     "deploy": {
       "runtime": "V2",
