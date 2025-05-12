@@ -1,5 +1,5 @@
 // resources/js/app.js
-
+import '../css/app.css'
 import './../../vendor/power-components/livewire-powergrid/dist/powergrid'
 import flatpickr from "flatpickr"
 import SlimSelect from 'slim-select'
