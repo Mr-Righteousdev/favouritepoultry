@@ -12,6 +12,10 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
+    build: {
+        // Force HTTPS for asset URLs
+        assetPrefix: 'https://'
+    },
     server: {
         cors: true,
     },
