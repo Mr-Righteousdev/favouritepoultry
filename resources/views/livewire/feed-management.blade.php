@@ -121,7 +121,7 @@
                                             <flux:field>    
                                                 <flux:label>Unit Price</flux:label>    
                                                 <flux:input.group>        
-                                                    <flux:input.group.prefix>$</flux:input.group.prefix>        
+                                                    <flux:input.group.prefix>Ugx</flux:input.group.prefix>        
                                                     <flux:input wire:model="unit_price" placeholder="200" type="number" required />    
                                                 </flux:input.group>    
                                                 <flux:error name="unit_price" />

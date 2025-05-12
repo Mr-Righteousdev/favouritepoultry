@@ -103,14 +103,14 @@ class Dashboard extends Component
 
         // Get egg production data
         $eggData = EggProduction::whereBetween('created_at', [$startDate, $endDate])
-            ->selectRaw("strftime('{$groupByFormat}', 'created_at') as date, SUM(total_eggs) as total")
+            ->selectRaw("DATE_FORMAT('created_at', '{$groupByFormat}') as date, SUM(total_eggs) as total")
             ->groupBy('date')
             ->pluck('total', 'date')
             ->toArray();
 
         // Get feed usage data
         $feedData = FeedUsage::whereBetween('created_at', [$startDate, $endDate])
-            ->selectRaw("strftime('{$groupByFormat}', 'created_at') as date, SUM(amount_used) as total")
+            ->selectRaw("DATE_FORMAT( 'created_at','{$groupByFormat}') as date, SUM(amount_used) as total")
             ->groupBy('date')
             ->pluck('total', 'date')
             ->toArray();
