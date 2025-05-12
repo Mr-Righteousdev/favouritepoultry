@@ -1,0 +1,37 @@
+{
+  "hash": "14c165c0",
+  "configHash": "d5d57c1b",
+  "lockfileHash": "63926a11",
+  "browserHash": "ca6d163c",
+  "optimized": {
+    "flatpickr": {
+      "src": "../../node_modules/flatpickr/dist/esm/index.js",
+      "file": "flatpickr.js",
+      "fileHash": "47e805e0",
+      "needsInterop": false
+    },
+    "slim-select": {
+      "src": "../../node_modules/slim-select/dist/slimselect.js",
+      "file": "slim-select.js",
+      "fileHash": "7d10cf47",
+      "needsInterop": true
+    },
+    "tom-select": {
+      "src": "../../node_modules/tom-select/dist/esm/tom-select.complete.js",
+      "file": "tom-select.js",
+      "fileHash": "5e8e0b1d",
+      "needsInterop": false
+    },
+    "apexcharts": {
+      "src": "../../node_modules/apexcharts/dist/apexcharts.esm.js",
+      "file": "apexcharts.js",
+      "fileHash": "f7159da7",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-JVWSFFO4": {
+      "file": "chunk-JVWSFFO4.js"
+    }
+  }
+}
